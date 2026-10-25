@@ -1,6 +1,6 @@
 #Install Homebrew from GitHub --> https://brew.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/xaviermaltastarridas/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zprofile"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #Install wget --> https://formulae.brew.sh/formula/wget
@@ -63,4 +63,4 @@ brew install --cask bartender
 #SCRIPTS#
 #Add this repo's scripts/ folder to the PATH
 SCRIPTS_DIR="$(cd "$(dirname "$0")/../../scripts" && pwd)"
-echo "export PATH=\"$SCRIPTS_DIR:\$PATH\"" >> /Users/xaviermaltastarridas/.zprofile
+echo "export PATH=\"$SCRIPTS_DIR:\$PATH\"" >> "$HOME/.zprofile"
