@@ -18,6 +18,12 @@ brew install tree
 #Install Helm --> https://helm.sh
 brew install helm
 
+#Install streamlink (used by scripts/openVLCTwitchStream.sh) --> https://formulae.brew.sh/formula/streamlink
+brew install streamlink
+
+#Install yt-dlp (used by scripts/openVLCyoutube.sh) --> https://formulae.brew.sh/formula/yt-dlp
+brew install yt-dlp
+
 
 #CASKS#
 #Install Firefox --> https://formulae.brew.sh/cask/firefox
@@ -41,6 +47,9 @@ brew install --cask microsoft-edge
 #Install Lens --> https://formulae.brew.sh/cask/lens
 brew install --cask lens
 
+#Install VLC --> https://formulae.brew.sh/cask/vlc
+brew install --cask vlc
+
 #Install Warp Terminal --> https://formulae.brew.sh/cask/warp
 brew install --cask warp
 
@@ -49,3 +58,9 @@ brew install --cask rectangle
 
 #Install Bartender for menu bar icon organiser--> https://formulae.brew.sh/cask/bartender
 brew install --cask bartender
+
+
+#SCRIPTS#
+#Add this repo's scripts/ folder to the PATH
+SCRIPTS_DIR="$(cd "$(dirname "$0")/../../scripts" && pwd)"
+echo "export PATH=\"$SCRIPTS_DIR:\$PATH\"" >> /Users/xaviermaltastarridas/.zprofile
