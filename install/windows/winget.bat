@@ -53,3 +53,15 @@ if %ERRORLEVEL% EQU 0 Echo PowerToys installed successfully.   %ERRORLEVEL%
 
 REM WinMerge
 winget install -e --id WinMerge.WinMerge
+
+REM VLC
+winget install -e --id VideoLAN.VLC
+if %ERRORLEVEL% EQU 0 Echo VLC installed successfully.   %ERRORLEVEL%
+
+REM Streamlink
+winget install -e --id Streamlink.Streamlink
+if %ERRORLEVEL% EQU 0 Echo Streamlink installed successfully.   %ERRORLEVEL%
+
+REM yt-dlp
+winget install -e --id yt-dlp.yt-dlp
+if %ERRORLEVEL% EQU 0 Echo yt-dlp installed successfully.   %ERRORLEVEL%
